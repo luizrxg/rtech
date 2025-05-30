@@ -32,7 +32,7 @@ const Solutions = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-56">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div>
+            <div data-aos="fade-right">
               <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
                 {t('solutions.title')}
                 <span className="text-gradient block">{t('solutions.titleHighlight')}</span>
@@ -43,10 +43,12 @@ const Solutions = () => {
             </div>
 
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6" data-aos="fade-left">
             {solutions.map((solution, index) => (
               <div
                 key={index}
+                data-aos="fade-down"
+                data-aos-delay={300 + index * 100}
                 className="flex items-start space-x-4 group cursor-pointer"
               >
                 <div className="flex-shrink-0">
@@ -67,7 +69,7 @@ const Solutions = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="glass-effect p-8 rounded-2xl">
+          <div className="glass-effect p-8 rounded-2xl" data-aos="zoom-out">
 
             <div className="space-y-4">
               <div className="flex items-center justify-between">
@@ -81,11 +83,11 @@ const Solutions = () => {
 
               <div className="h-px bg-white/20"></div>
 
-              <div className="grid grid-cols-4 gap-12 pt-6">
-                <img className="my-auto w-full" src="prefeitura.png" alt="Logo" />
-                <img className="my-auto w-full" src="microsoft.png" alt="Logo" />
-                <img className="my-auto w-full" src="google.png" alt="Logo" />
-                <img className="my-auto w-full" src="ibm.png" alt="Logo" />
+              <div className="grid grid-cols-4 gap-12 pt-6 pb-3">
+                <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 } src="prefeitura.png" alt="Logo" />
+                <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 + 100} src="microsoft.png" alt="Logo" />
+                <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 + 2 * 100} src="google.png" alt="Logo" />
+                <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 + 3 * 100} src="ibm.png" alt="Logo" />
               </div>
 
             </div>

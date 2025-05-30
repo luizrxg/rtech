@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8" data-aos="fade-right">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
                 {t('hero.title')}
@@ -54,10 +54,10 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative h-full">
-            <div className="absolute right-10 bottom-60 w-3/4 h-3/5 bg-accent/30 rounded-full blur-xl animate-pulse-slow"></div>
-            <img className="absolute animate-float right-10 top-0 w-3/4" src="brain.png" />
-            <img className="absolute right-10 top-64 w-3/4" src="hand.png"  />
+          <div className="hidden lg:block relative h-full" data-aos="fade-left">
+            <div style={{top: -30}} className="absolute right-10 w-96 h-72 bg-accent/30 rounded-full blur-xl animate-pulse-slow"></div>
+            <img alt="Brain" className="absolute animate-float right-10 top-0 w-96" src="brain.png"/>
+            <img alt="Hand"  className="absolute right-10 top-64 w-96" src="hand.png"/>
           </div>
 
           {/* Right Content - AI Visualization

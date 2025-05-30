@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <section id="services" className="pb-20 pt-32 bg-gradient-to-b from-primary to-primary-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
             {t('services.title')} <span className="text-gradient">{t('services.titleHighlight')}</span>
           </h2>
@@ -41,6 +41,8 @@ const Services = () => {
             <div
               key={index}
               className="max-w-2xl group relative glass-effect p-8 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-accent/20"
+              data-aos="zoom-in"
+              data-aos-delay={400 + index * 100}
             >
               {/* Icon */}
               <div className="relative mb-6">

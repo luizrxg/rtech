@@ -45,7 +45,7 @@ const Stats = () => {
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
             {t('stats.title')} <span className="text-gradient">{t('stats.titleHighlight')}</span>
           </h2>
@@ -58,6 +58,8 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
+              data-aos="zoom-in"
+              data-aos-delay={400 + index * 100}
               className="text-center group hover:scale-105 transition-transform duration-300"
             >
               <div className="glass-effect p-8 rounded-2xl">
@@ -89,7 +91,7 @@ const Stats = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div data-aos="zoom-out" data-aos-delay={800} className="text-center mt-16">
           <div className="glass-effect inline-block p-8 rounded-2xl">
             <h3 className="text-2xl font-bold text-white mb-4">
               {t('stats.cta.title')}
