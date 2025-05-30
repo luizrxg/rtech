@@ -97,9 +97,9 @@ const Stats = () => {
             <p className="text-blue-100 mb-6 max-w-md">
               {t('stats.cta.subtitle')}
             </p>
-            <button className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105">
+            <a href="#contact" className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105">
               {t('stats.cta.button')}
-            </button>
+            </a>
           </div>
         </div>
       </div>

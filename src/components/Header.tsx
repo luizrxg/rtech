@@ -49,9 +49,9 @@ const Header = () => {
             {/* Language Selector and CTA */}
             <div className="hidden md:flex items-center space-x-4">
               <LanguageSelector />
-              <Button className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105">
+              <a href="#contact" className="bg-accent hover:bg-accent/90 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105">
                 {t('nav.getStarted')}
-              </Button>
+              </a>
             </div>
 
             {/* Mobile menu button */}

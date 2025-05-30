@@ -89,7 +89,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       'stats.supportDesc': 'Assistência 24 horas',
       'stats.cta.title': 'Pronto para Transformar seu Negócio?',
       'stats.cta.subtitle': 'Junte-se a centenas de empresas que já revolucionaram suas operações com nossas soluções de IA.',
-      'stats.cta.button': 'Comece sua Jornada Hoje',
+      'stats.cta.button': 'Comece sua jornada hoje',
       
       // Contact
       'contact.title': 'Vamos',
