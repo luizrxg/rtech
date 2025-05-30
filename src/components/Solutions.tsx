@@ -83,7 +83,7 @@ const Solutions = () => {
 
               <div className="h-px bg-white/20"></div>
 
-              <div className="grid grid-cols-4 gap-12 pt-6 pb-3">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 pt-6 pb-3">
                 <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 } src="prefeitura.png" alt="Logo" />
                 <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 + 100} src="microsoft.png" alt="Logo" />
                 <img className="my-auto w-full" data-aos="zoom-out" data-aos-delay={400 + 2 * 100} src="google.png" alt="Logo" />
