@@ -48,7 +48,7 @@ const Hero = () => {
                 <div className="text-blue-200 text-sm">{t('hero.satisfaction')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">24/7</div>
+                <div translate="no" className="text-3xl font-bold text-accent">24/7</div>
                 <div className="text-blue-200 text-sm">{t('hero.support')}</div>
               </div>
             </div>
