@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Monitor, MessageSquare, BarChart3, Globe } from 'lucide-react';
+import { Monitor, MessageSquare, BarChart3 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Solutions = () => {
@@ -82,10 +82,10 @@ const Solutions = () => {
               <div className="h-px bg-white/20"></div>
 
               <div className="grid grid-cols-4 gap-12 pt-6">
-                <img className="my-auto w-full" src="public/prefeitura.png" alt="Logo" />
-                <img className="my-auto w-full" src="public/microsoft.png" alt="Logo" />
-                <img className="my-auto w-full" src="public/google.png" alt="Logo" />
-                <img className="my-auto w-full" src="public/ibm.png" alt="Logo" />
+                <img className="my-auto w-full" src="prefeitura.png" alt="Logo" />
+                <img className="my-auto w-full" src="microsoft.png" alt="Logo" />
+                <img className="my-auto w-full" src="google.png" alt="Logo" />
+                <img className="my-auto w-full" src="ibm.png" alt="Logo" />
               </div>
 
             </div>

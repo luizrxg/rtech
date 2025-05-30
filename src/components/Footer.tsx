@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Mail, Phone, MapPin, Github, Twitter, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
@@ -8,8 +8,7 @@ const Footer = () => {
   const { t } = useLanguage();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' }
   ];
 
@@ -50,8 +49,8 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6" data-aos="fade-up" data-aos-delay="100">
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-3">
-                <img src="public/logo-icon.png" className="h-8 text-white animate-pulse-slow" alt="Logo Icon" />
-                <img src="public/logo-name.svg" className="w-20 min-w-20" alt="Logo Name" />
+                <img src="logo-icon.png" className="h-8 text-white animate-pulse-slow" alt="Logo Icon" />
+                <img src="logo-name.svg" className="w-20 min-w-20" alt="Logo Name" />
               </div>
             </div>
             

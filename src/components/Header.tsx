@@ -25,10 +25,10 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <img src="public/logo-icon.png" className="h-8 text-white animate-pulse-slow" alt="Logo Icon" />
+                <img src="logo-icon.png" className="h-8 text-white animate-pulse-slow" alt="Logo Icon" />
                 <div className="absolute inset-0 left-1 h-8 w-8 bg-white rounded-full blur-md opacity-30 animate-glow"></div>
               </div>
-              <img src="public/logo-name.svg" className="w-20 min-w-20" alt="Logo Name" />
+              <img src="logo-name.svg" className="w-20 min-w-20" alt="Logo Name" />
             </div>
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8" data-aos="fade-down" data-aos-delay="200">

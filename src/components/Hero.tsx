@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Cpu, Zap, Shield } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -56,8 +56,8 @@ const Hero = () => {
 
           <div className="relative h-full">
             <div className="absolute right-10 bottom-60 w-3/4 h-3/5 bg-accent/30 rounded-full blur-xl animate-pulse-slow"></div>
-            <img className="absolute animate-float right-10 top-0 w-3/4" src="public/brain.png" />
-            <img className="absolute right-10 top-64 w-3/4" src="public/hand.png"  />
+            <img className="absolute animate-float right-10 top-0 w-3/4" src="brain.png" />
+            <img className="absolute right-10 top-64 w-3/4" src="hand.png"  />
           </div>
 
           {/* Right Content - AI Visualization
