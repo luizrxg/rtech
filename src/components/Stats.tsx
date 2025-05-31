@@ -72,7 +72,7 @@ const Stats = () => {
                 </div>
 
                 {/* Value */}
-                <div className="text-4xl lg:text-5xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform">
+                <div translate="no" className="text-4xl lg:text-5xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform">
                   {stat.value}
                 </div>
 
