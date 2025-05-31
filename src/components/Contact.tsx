@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Nos ligue",
-      value: "(34) 9999-9999",
+      value: "(34) 99681-7814",
       description: "Seg-Sex 9-18 GMT"
     },
     {
