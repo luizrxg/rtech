@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Mande um email",
-      value: "rh@rtech.com",
+      value: "contato@rtechsolution.com.br",
       description: "Entre em contato a qualquer momento"
     },
     {
