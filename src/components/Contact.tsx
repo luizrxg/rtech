@@ -4,6 +4,7 @@ import { Send, Mail, Phone, MapPin, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useLanguage } from "@/contexts/LanguageContext.tsx";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,8 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const { t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,21 +35,21 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Mande um email",
-      value: "contato@rtechsolution.com.br",
-      description: "Entre em contato a qualquer momento"
+      title: t('contact.info.email.title'),
+      value: t('contact.info.email.value'),
+      description: t('contact.info.email.description')
     },
     {
       icon: Phone,
-      title: "Nos ligue",
-      value: "(34) 99681-7814",
-      description: "Seg-Sex 9-18 GMT"
+      title: t('contact.info.phone.title'),
+      value: t('contact.info.phone.value'),
+      description: t('contact.info.phone.description')
     },
     {
       icon: MapPin,
-      title: "Nos visite",
-      value: "Uberlândia, MG",
-      description: "Agende uma reunião"
+      title: t('contact.info.local.title'),
+      value: t('contact.info.local.value'),
+      description: t('contact.info.local.description')
     }
   ];
 
@@ -59,18 +62,17 @@ const Contact = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-            Vamos construir o <span className="text-gradient">Futuro</span> juntos
+            {t('contact.title')} <span className="text-gradient">{t('contact.titleHighlight')}</span> {t('contact.titleEnd')}
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Pronto para transformar seu negócio com tecnologia de ponta?
-            Adoraríamos saber mais sobre seu projeto e descobrir como podemos ajudá-lo a ter sucesso.
+            {t('contact.subtitle')}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           <div className="glass-effect p-8 rounded-2xl" data-aos="fade-right" data-aos-delay="200">
-            <h3 className="text-2xl font-bold text-white mb-6">Inicie seu projeto</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">{t('contact.form.title')}</h3>
             
             {isSubmitted ? (
               <div className="text-center py-8">
@@ -83,7 +85,7 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Nome completo *
+                      {t('contact.form.name')}
                     </label>
                     <Input
                       type="text"
@@ -92,12 +94,12 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="bg-white/10 border-white/20 text-white placeholder-blue-200 focus:border-accent"
-                      placeholder="João Silva"
+                      placeholder={t('contact.form.namePlaceholder')}
                     />
                   </div>
                   <div>
                     <label className="block text-white text-sm font-medium mb-2">
-                      Email *
+                      {t('contact.form.email')}
                     </label>
                     <Input
                       type="email"
@@ -106,14 +108,14 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="bg-white/10 border-white/20 text-white placeholder-blue-200 focus:border-accent"
-                      placeholder="joao@empresa.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Nome da empresa
+                    {t('contact.form.company')}
                   </label>
                   <Input
                     type="text"
@@ -121,13 +123,13 @@ const Contact = () => {
                     value={formData.company}
                     onChange={handleChange}
                     className="bg-white/10 border-white/20 text-white placeholder-blue-200 focus:border-accent"
-                    placeholder="Sua empresa"
+                    placeholder={t('contact.form.companyPlaceholder')}
                   />
                 </div>
                 
                 <div>
                   <label className="block text-white text-sm font-medium mb-2">
-                    Detalhes do projeto *
+                    {t('contact.form.message')}
                   </label>
                   <Textarea
                     name="message"
@@ -136,16 +138,15 @@ const Contact = () => {
                     required
                     rows={5}
                     className="bg-white/10 border-white/20 text-white placeholder-blue-200 focus:border-accent resize-none"
-                    placeholder="Conte-nos sobre seu projeto, seus objetivos e sobre como podemos te ajudar "
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
-                
                 <Button
                   type="submit"
                   className="w-full bg-accent hover:bg-accent/90 text-white font-semibold py-3 rounded-full transition-all duration-300 hover:scale-105 group"
                 >
-                  Enviar mensagem
-                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  {t('contact.form.send')}
+                  <Send className="h-5 w-5" />
                 </Button>
               </form>
             )}
@@ -154,10 +155,9 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8" data-aos="fade-left" data-aos-delay="400">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Entre em contato</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">{t('contact.info.title')}</h3>
               <p className="text-blue-100 leading-relaxed">
-                Quer você precise de consultoria técnica ou queira explorar oportunidades de parceria,
-                nossa equipe está aqui para ajudá-lo a navegar no futuro da tecnologia.
+                {t('contact.info.subtitle')}
               </p>
             </div>
 
@@ -185,12 +185,12 @@ const Contact = () => {
 
             {/* Additional CTA */}
             <div className="glass-effect p-6 rounded-xl text-center" data-aos="fade-up" data-aos-delay="900">
-              <h4 className="text-white font-semibold mb-2">Precisa de suporte imediato ?</h4>
+              <h4 className="text-white font-semibold mb-2">{t('contact.emergency.title')}</h4>
               <p className="text-blue-100 text-sm mb-4">
-                Nossos especialistas em estão disponíveis para consultas de emergência e necessidades urgentes de projetos.
+                {t('contact.emergency.subtitle')}
               </p>
-              <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-primary">
-                Agendar chamada de emergência
+              <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white">
+                {t('contact.emergency.schedule')}
               </Button>
             </div>
           </div>

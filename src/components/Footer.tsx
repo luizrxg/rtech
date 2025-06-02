@@ -15,8 +15,6 @@ const Footer = () => {
   const footerLinks = {
     company: [
       { name: t('footer.aboutUs'), href: '#about' },
-      { name: t('footer.team'), href: '#team' },
-      { name: t('footer.careers'), href: '#careers' },
       { name: t('nav.contact'), href: '#contact' }
     ],
     services: [
@@ -25,9 +23,6 @@ const Footer = () => {
       { name: t('footer.consulting'), href: '#services' }
     ],
     resources: [
-      { name: t('footer.documentation'), href: '#docs' },
-      { name: t('footer.caseStudies'), href: '#cases' },
-      { name: t('footer.blog'), href: '#blog' },
       { name: t('footer.supportFooter'), href: '#support' }
     ]
   };
@@ -130,7 +125,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/10" data-aos="fade-up" data-aos-delay="500">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-blue-100 text-sm">
-              © {currentYear} {t('footer.copyright')}
+              {t('footer.copyright')}
             </div>
             
             <div className="flex items-center space-x-6">

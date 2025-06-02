@@ -25,8 +25,8 @@ const Solutions = () => {
   ];
 
   return (
-    <section id="solutions" className="pb-20 pt-32 bg-gradient-to-b from-primary-light to-primary relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
+    <section id="solutions" className="pb-20 pt-40 bg-gradient-to-b from-primary-light to-primary relative overflow-hidden">
+      <div className="absolute bottom-40 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-56">

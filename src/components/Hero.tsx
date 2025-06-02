@@ -29,11 +29,11 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 group">
-                {t('hero.startJourney')}
+                <a href="#contact">{t('hero.startJourney')}</a>
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="ghost" className="border-accent text-white hover:text-white hover:bg-accent/20 px-8 py-4 rounded-full text-lg transition-all duration-300">
-                {t('hero.learnMore')}
+                <a href="#services">{t('hero.learnMore')}</a>
               </Button>
             </div>
 
